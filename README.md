@@ -1,4 +1,4 @@
-# GitHub Workshop 🚀
+# GitHub Workshop 
 
 Welcome to the GitHub Hands-on Workshop!
 
