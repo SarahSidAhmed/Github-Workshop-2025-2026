@@ -1,0 +1,21 @@
+---
+## ⚙️ GitHub Actions – `.github/workflows/ci.yml`
+
+```yaml
+name: Simple CI
+
+on: [push, pull_request]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check students folder exists
+        run: |
+          test -d students
+
+      - name: List students
+        run: |
+          ls students
